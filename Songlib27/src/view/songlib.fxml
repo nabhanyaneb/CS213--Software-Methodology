@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Joshua Gole and Nabhanya Neb -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane 
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="view.SongLibController">
+	
+	<ListView fx:id="listView" 
+		AnchorPane.topAnchor = "10"
+		AnchorPane.leftAnchor = "10" 
+		AnchorPane.rightAnchor = "200"
+		AnchorPane.bottomAnchor = "135"/>
+	
+	<Button fx:id="add" layoutX="260" layoutY="270" mnemonicParsing="false" prefHeight="35" prefWidth="175" text="Add" onAction="#button"/>
+   	<Button fx:id="edit" layoutX="260" layoutY="310" mnemonicParsing="false" prefHeight="35" prefWidth="175" text="Edit" onAction="#button"/>
+   	<Button fx:id="delete" layoutX="260" layoutY="350" mnemonicParsing="false" prefHeight="35" prefWidth="175" text="Delete" onAction="#button"/>
+      
+   <TextField fx:id="name" layoutX="10" layoutY="270" prefHeight="25.0" prefWidth="240" promptText="Song Name *required" />
+   <TextField fx:id="artist" layoutX="10" layoutY="300" prefHeight="25.0" prefWidth="240" promptText="Artist *required" />
+   <TextField fx:id="album" layoutX="10" layoutY="330" prefHeight="25.0" prefWidth="240" promptText="Album" />
+   <TextField fx:id="year" layoutX="10" layoutY="360" prefHeight="25.0" prefWidth="240" promptText="Year" />
+   
+   <TextArea fx:id="details" layoutX="260.0" layoutY="10.0" prefHeight="250" prefWidth="175.0" promptText="Song Details" />
+   
+</AnchorPane>
