@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Joshua Gole and Nabhanya Neb -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane 
+
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="view.UserMainController">
+	
+	<Label fx:id="label" layoutX="150.0" layoutY="5.0" text="User Subsystem:"/>
+	
+   	<Button fx:id="quit" layoutX="330" layoutY="5" mnemonicParsing="false" prefHeight="20" prefWidth="60" text="Quit" onAction="#userAction"/>
+   	<Button fx:id="logout" layoutX="330" layoutY="30" mnemonicParsing="false" prefHeight="20" prefWidth="60" text="Logout" onAction="#userAction"/>
+   	
+ 	<ListView fx:id="listView" 
+		AnchorPane.topAnchor = "25"
+		AnchorPane.leftAnchor = "10" 
+		AnchorPane.rightAnchor = "175"
+		AnchorPane.bottomAnchor = "35"/>
+		
+	<TextArea fx:id="details" layoutX="230.0" layoutY="110.0" prefHeight="55" prefWidth="165.0" promptText="Album Details" />
+	
+	<TextField fx:id="searchBar" layoutX="230" layoutY="55" prefHeight="20.0" prefWidth="165" promptText="type=value / dd-mm-yyyy" />
+	
+	<Button fx:id="byDate" layoutX="230" layoutY="80" mnemonicParsing="false" prefHeight="15" prefWidth="55" text="Date" onAction="#userAction"/>
+	<Button fx:id="byTag" layoutX="285" layoutY="80" mnemonicParsing="false" prefHeight="15" prefWidth="55" text="Tag" onAction="#userAction"/>
+	<Button fx:id="createResults" layoutX="340" layoutY="80" mnemonicParsing="false" prefHeight="15" prefWidth="55" text="New" onAction="#userAction"/>
+	   	
+   	<Button fx:id="open" layoutX="10" layoutY="170" mnemonicParsing="false" prefHeight="20" prefWidth="50" text="Open" onAction="#userAction"/>
+   	<Button fx:id="delete" layoutX="65" layoutY="170" mnemonicParsing="false" prefHeight="20" prefWidth="60" text="Delete" onAction="#userAction"/>
+   	<Button fx:id="createNew" layoutX="130" layoutY="170" mnemonicParsing="false" prefHeight="20" prefWidth="90" text="New Empty" onAction="#userAction"/>
+    <Button fx:id="rename" layoutX="230" layoutY="170" mnemonicParsing="false" prefHeight="20" prefWidth="70" text="Rename" onAction="#userAction"/>
+  
+  	<TextField fx:id="renameBar" layoutX="300" layoutY="170" prefHeight="20.0" prefWidth="100" promptText="Rename Album" />
+</AnchorPane>
